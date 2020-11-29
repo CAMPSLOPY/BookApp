@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2 {
+  font-weight: normal;
+}
+
+#wrapper {
+  min-height: 90vh;
+  margin: auto;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+  border: 1px solid lightgray;
+  width: 60%;
+  overflow: hidden;
+}
+/* Header Section */
+header {
+  min-height: 30vh;
+}
+#page-banner {
+  text-align: center;
+  background-color: #eee;
+  padding: 0.5rem;
+  width: 100%;
+}
+#page-banner h1,
+p {
+  text-align: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+#page-banner h1 {
+  font-size: 2rem;
+}
+#page-banner p {
+  font-size: 1.3rem;
+}
+#page-banner form {
+  margin: 2rem 0;
+}
+
+#page-banner input {
+  padding: 0.6rem;
+  display: block;
+  width: 90%;
+  margin: auto;
+  border-radius: 4px;
+  border: none;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/* Books section */
+#book-list {
+  background-color: #fff;
+  width: 90%;
+  margin: auto;
+}
+
+#book-list,
+#tabbed-content {
+  margin: 30px;
+}
+#book-list ul,
+#tabbed-content ul {
+  list-style-type: none;
+}
+#book-list li {
+  border-left: 5px solid #ddd;
+  padding: 20px;
+  margin: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+#book-list li:hover {
+  border-color: #eaac9d;
+}
+#book-list h2 {
+  margin: 10px 10px;
+}
+
+.delete {
+  background: #eaac9d;
+  color: white;
+  padding: 2px 13px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+#add-book {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#add-book::after {
+  content: "";
+  display: flex;
+}
+
+#add-book input {
+  padding: 0.6rem;
+  width: 60%;
+  outline: none;
+}
+#add-book button {
+  margin: 10px 0;
+  background: #eaac9d;
+  color: white;
+  padding: 5px 13px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border: none;
+}
+#add-book label{
+    line-height: 52px;
+}
+
+/* footer section */
+footer {
+  background: rgb(97, 104, 110);
+  min-height: 10vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  width: 60%;
+  margin: auto;
+}
+.fall {
+  opacity: 0;
+  transform: translateY(8rem) rotateZ(20deg);
+}
+
+#tabbed-content li{
+display: inline-block;
+padding: 10px 14px;
+background: #ddd;
+border-radius: 4px;
+cursor: pointer;
+margin-right: 10px;
+}
+#tabbed-content .panel{
+  display: none;
+  border: 1px solid #ddd;
+  padding: 0 10px;
+  border-radius: 4px;
+}
+#tabbed-content .panel.active{
+  display: block;
+}
+
+@media screen and (max-width: 750px) {
+  #wrapper {
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
