@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BookReaderApp</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="This BookReader application helps to store read
+     and unread books inside a memory for proper reading schedule by the reader"
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="wrapper">
+      <header>
+        <section id="page-banner">
+          <h1 class="title">BookReaderApp</h1>
+          <p>Book for Developers</p>
+          <form id="search-books">
+            <input placeholder="search books..." type="text" />
+          </form>
+        </section>
+      </header>
+
+      <section id="book-list">
+        <h2 class="title">Books to Read</h2>
+        <ul>
+          <li>
+            <span class="name">Web development for Beginners</span>
+            <span class="delete">Delete</span>
+          </li>
+          <li>
+            <span class="name">Javascript the Weird Parts</span>
+            <span class="delete">Delete</span>
+          </li>
+          <li>
+            <span class="name">How to Become a Frontend Developer</span>
+            <span class="delete">Delete</span>
+          </li>
+          <li>
+            <span class="name">Learning to Code</span>
+            <span class="delete">Delete</span>
+          </li>
+        </ul>
+      </section>
+      <form id="add-book">
+        <input type="checkbox" id="hide" />
+        <label for="hide">Hide all Books</label>
+        <input type="text" placeholder="Add a Book" />
+        <button>Add</button>
+      </form>
+
+      <div id="tabbed-content">
+        <ul class="tabs">
+          <li data-target="#about" class="active">About</li>
+          <li data-target="#contact">Contact</li>
+        </ul>
+        <div class="panel active" id="about">
+          <p>Content for about Tab</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="panel" id="contact">
+          <p>Content for contact Tab</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis!
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h4>Developed by CampSlopy</h4>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
